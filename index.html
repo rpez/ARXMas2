@@ -4,7 +4,7 @@
   <!-- include ar.js for A-Frame -->
   <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
   <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs>
+    <a-scene embedded arjs renderer='precision: medium'>
       <a-obj-model src="objects/Lahjapaketti.obj" mtl="objects/Lahjapaketti.mtl" scale="0.01 0.01 0.01"></a-obj-model>
       <!-- define a camera which will move according to the marker position -->
       <a-marker-camera preset='hiro'></a-marker-camera>
