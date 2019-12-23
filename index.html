@@ -9,12 +9,12 @@
       </a-assets> -->
       <!-- <a-obj-model src="#object" mtl="#material" scale="0.01 0.01 0.01"></a-obj-model> -->
 
-      <!-- <a-obj-model src="objects/Lahjapaketti.obj" mtl="objects/Lahjapaketti.mtl" scale="0.01 0.01 0.01"></a-obj-model> -->
+      <a-obj-model src="objects/Lahjapaketti.obj" mtl="objects/Lahjapaketti.mtl" scale="0.01 0.01 0.01"></a-obj-model>
 
       <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
   </body>
-  <script>
+  <!-- <script>
     var objectLoader = new THREE.ObjectLoader();
     objectLoader.load("objects/Lahjapaketti.json", function ( obj ) {
       AFRAME.scenes[0].object3D.add( obj );
@@ -22,5 +22,5 @@
       obj.rotation.set(0, 0, 0);
       obj.position.et(0, 0, 0);
     });
-  </script>
+  </script> -->
 </html>
