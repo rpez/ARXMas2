@@ -11,18 +11,16 @@
 
       <!-- <a-obj-model src="objects/Lahjapaketti.obj" mtl="objects/Lahjapaketti.mtl" scale="0.01 0.01 0.01"></a-obj-model> -->
 
-      <a-entity json-model="objects/Lahjapaketti.json" scale="0.01 0.01 0.01"></a-entity>
-
       <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
   </body>
-  <!-- <script>
-    var objectLoader = new THREE.LegacyJSONLoader();
+  <script>
+    var objectLoader = new THREE.ObjectLoader();
     objectLoader.load("objects/Lahjapaketti.json", function ( obj ) {
       AFRAME.scenes[0].object3D.add( obj );
       obj.scale.set(0.01, 0.01, 0.01);
       obj.rotation.set(0, 0, 0);
       obj.position.et(0, 0, 0);
     });
-  </script> -->
+  </script>
 </html>
