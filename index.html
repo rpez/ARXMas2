@@ -15,7 +15,7 @@
     </a-scene>
   </body>
   <script>
-    var objectLoader = new THREE.ObjectLoader();
+    var objectLoader = new THREE.LegacyJSONLoader();
     objectLoader.load("objects/Lahjapaketti.json", function ( obj ) {
       AFRAME.scenes[0].object3D.add( obj );
       obj.scale.set(0.01, 0.01, 0.01);
